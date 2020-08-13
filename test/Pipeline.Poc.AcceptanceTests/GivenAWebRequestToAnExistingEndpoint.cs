@@ -11,7 +11,7 @@ namespace Pipeline.Poc.AcceptanceTests
         public async Task UponCallingIt_ShouldRespondSuccessfully()
         {
             var client = new HttpClient();
-            var response = await client.GetAsync("https://localhost:44346/weatherforecast");
+            var response = await client.GetAsync("http://localhost:5000/weatherforecast");
             response.EnsureSuccessStatusCode();
         }
     }
